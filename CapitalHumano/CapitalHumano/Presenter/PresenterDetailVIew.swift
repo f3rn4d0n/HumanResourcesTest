@@ -21,8 +21,8 @@ protocol PresenterDetailViewProtocol{
     func getUserAge() -> Date
     func setImage(_ image:UIImage)
     func setBirthday(_ date:Date)
-    func setName(_ name:String)
-    func setPhone(_ phone:String)
+    func shouldSetName(_ name: String) -> Bool
+    func shouldSetPhone(_ phone:String) -> Bool
     func getNumberOfColors() -> Int
     func getColorBy(index:Int) -> ColorModel
     func selectColorBy(index:Int)
@@ -92,12 +92,20 @@ class PresenterDetailView: PresenterDetailViewProtocol, InteractorDetailViewProt
         user.birthday = date
     }
     
-    func setName(_ name: String) {
-        user.name = name
+    func shouldSetName(_ name: String) -> Bool {
+        if name.count <= 35{
+            user.name = name
+            return true
+        }
+        return false
     }
 
-    func setPhone(_ phone: String) {
-        user.phoneNumber = phone
+    func shouldSetPhone(_ phone: String) -> Bool {
+        if phone.count <= 10{
+            user.phoneNumber = phone
+            return true
+        }
+        return false
     }
     
     //Colors

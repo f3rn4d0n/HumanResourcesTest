@@ -219,11 +219,9 @@ extension DetailViewController: UITextFieldDelegate{
         let currentString: NSString = textField.text! as NSString
         let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
         if textField.tag == labelTypeTag.name.rawValue{
-            presenter?.setName(newString as String)
-            return newString.length <= 35
+            return presenter?.shouldSetName(newString as String) ?? false
         }else{
-            presenter?.setPhone(newString as String)
-            return newString.length <= 10
+            return presenter?.shouldSetPhone(newString as String) ?? false
         }
     }
 }
