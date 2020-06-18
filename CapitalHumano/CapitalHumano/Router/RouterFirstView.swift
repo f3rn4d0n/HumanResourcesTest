@@ -14,25 +14,25 @@ protocol RouterFirstViewProtocol{
 }
 
 class RouterFirstView: RouterFirstViewProtocol {
-        var view: ViewController = ViewController()
-        let presenter = PresenterFirstView()
-        let interactor = InteractorFirstView()
-        var navigationController: UINavigationController?
-        
-        init() {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            view = (storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController)!
-            view.presenter = presenter
-            presenter.view = view
-            presenter.interactor = interactor
-            presenter.routing = self
-            navigationController = UINavigationController(rootViewController: view)
-        }
-        
+    var view: ViewController = ViewController()
+    let presenter = PresenterFirstView()
+    let interactor = InteractorFirstView()
+    var navigationController: UINavigationController?
+    
+    init() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        view = (storyboard.instantiateViewController(withIdentifier: "ViewController") as? ViewController)!
+        view.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.routing = self
+        navigationController = UINavigationController(rootViewController: view)
+    }
+    
     func goToDetailWith(options:[OptionModel]) {
-            let routing = RouterDetailView()
-            routing.view.modalPresentationStyle = .fullScreen
-            view.navigationController?.pushViewController(routing.view, animated: true)
-        }
-
+        let routing = RouterDetailView()
+        routing.view.modalPresentationStyle = .fullScreen
+        view.navigationController?.pushViewController(routing.view, animated: true)
+    }
+    
 }

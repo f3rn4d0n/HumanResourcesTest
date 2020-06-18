@@ -16,7 +16,7 @@ protocol ViewControllerProtocol{
 
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var optionsTV: UITableView!
     @IBOutlet weak var continueBtn: UIButton!
     
@@ -47,8 +47,8 @@ class ViewController: UIViewController {
     func setupData(){
         presenter?.requestOptions()
     }
-
-
+    
+    
     @IBAction func continueAction(_ sender: Any) {
         presenter?.goToDetail()
     }

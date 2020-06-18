@@ -13,18 +13,18 @@ protocol RouterDetailViewProtocol{
 }
 
 class RouterDetailView: RouterDetailViewProtocol {
-
-            var view: DetailViewController = DetailViewController()
-            let presenter = PresenterDetailView()
-            let interactor = InteractorDetailView()
-            
-            init() {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                view = (storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController)!
-                view.presenter = presenter
-                presenter.view = view
-                presenter.interactor = interactor
-                presenter.routing = self
-                interactor.presenter = presenter
-            }
+    
+    var view: DetailViewController = DetailViewController()
+    let presenter = PresenterDetailView()
+    let interactor = InteractorDetailView()
+    
+    init() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        view = (storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController)!
+        view.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.routing = self
+        interactor.presenter = presenter
+    }
 }
