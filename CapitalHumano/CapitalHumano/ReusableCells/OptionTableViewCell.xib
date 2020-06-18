@@ -63,6 +63,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backView" destination="fpd-LZ-RCp" id="uHu-AF-FIJ"/>
                 <outlet property="imageV" destination="URM-BR-F3B" id="Pjy-yY-Wnn"/>
                 <outlet property="nameLbl" destination="z59-hr-xOa" id="hIl-aY-Xon"/>
                 <outlet property="selectedView" destination="Rz3-bf-BtN" id="nTg-ea-c43"/>

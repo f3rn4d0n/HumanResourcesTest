@@ -32,6 +32,7 @@ class RouterFirstView: RouterFirstViewProtocol {
     func goToDetailWith(options:[OptionModel]) {
         let routing = RouterDetailView()
         routing.view.modalPresentationStyle = .fullScreen
+        routing.presenter.options = options
         view.navigationController?.pushViewController(routing.view, animated: true)
     }
     

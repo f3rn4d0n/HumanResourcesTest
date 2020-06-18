@@ -10,6 +10,7 @@ import UIKit
 
 class OptionTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var selectedView: UIView!
@@ -30,6 +31,7 @@ class OptionTableViewCell: UITableViewCell {
         selectedView.layer.cornerRadius = selectedView.frame.width / 2
         selectedView.layer.borderColor = UIColor.white.cgColor
         selectedView.layer.borderWidth = 2
+        backView.layer.cornerRadius = 5
     }
     
     func fillWith(option: OptionModel){

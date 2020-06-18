@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GenderTableViewCell" customModule="CapitalHumano" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqF-MP-HCy">
+                        <rect key="frame" x="10" y="5" width="300" height="34"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gender" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-Xj-oc1">
+                                <rect key="frame" x="5" y="5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tw9-Xj-oc1" secondAttribute="height" multiplier="1:1" id="1W3-Vq-Vi8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hombre/Mujer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovY-Au-t8C">
+                                <rect key="frame" x="39" y="6.5" width="251" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ovY-Au-t8C" secondAttribute="trailing" constant="10" id="5Xy-p1-DfA"/>
+                            <constraint firstAttribute="bottom" secondItem="tw9-Xj-oc1" secondAttribute="bottom" constant="5" id="Hcs-Qy-onh"/>
+                            <constraint firstItem="tw9-Xj-oc1" firstAttribute="leading" secondItem="WqF-MP-HCy" secondAttribute="leading" constant="5" id="V1n-8U-dgk"/>
+                            <constraint firstItem="ovY-Au-t8C" firstAttribute="leading" secondItem="tw9-Xj-oc1" secondAttribute="trailing" constant="10" id="msy-9f-BEp"/>
+                            <constraint firstItem="tw9-Xj-oc1" firstAttribute="top" secondItem="WqF-MP-HCy" secondAttribute="top" constant="5" id="x5y-rD-tKz"/>
+                            <constraint firstItem="ovY-Au-t8C" firstAttribute="centerY" secondItem="tw9-Xj-oc1" secondAttribute="centerY" id="yGG-Dq-h8D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WqF-MP-HCy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="3Yz-Mc-rry"/>
+                    <constraint firstItem="WqF-MP-HCy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4E0-Yq-Qnm"/>
+                    <constraint firstAttribute="bottom" secondItem="WqF-MP-HCy" secondAttribute="bottom" constant="5" id="J0k-8U-of2"/>
+                    <constraint firstAttribute="trailing" secondItem="WqF-MP-HCy" secondAttribute="trailing" constant="10" id="a1L-9f-BfE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="genderLbl" destination="ovY-Au-t8C" id="qKu-tD-Wcb"/>
+                <outlet property="imageOption" destination="tw9-Xj-oc1" id="FR3-KS-G8C"/>
+                <outlet property="mainColor" destination="WqF-MP-HCy" id="fGo-4K-dVq"/>
+            </connections>
+            <point key="canvasLocation" x="223" y="163"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gender" width="48" height="48"/>
+    </resources>
+</document>

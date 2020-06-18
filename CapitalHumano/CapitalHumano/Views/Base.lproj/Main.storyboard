@@ -74,6 +74,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="248-aD-EHC"/>
                     </view>
+                    <connections>
+                        <outlet property="optionsTV" destination="HB8-dW-lSH" id="sBS-vQ-opk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1RB-2q-WS3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -49,7 +49,13 @@ class PresenterFirstView: PresenterFirstViewProtocol {
             }
         }
         if available{
-            routing?.goToDetailWith(options: options)
+            var optionsSelected:[OptionModel] = []
+            for option in options{
+                if option.selected{
+                    optionsSelected.append(option)
+                }
+            }
+            routing?.goToDetailWith(options: optionsSelected)
         }else{
             view?.noneSelected()
         }
