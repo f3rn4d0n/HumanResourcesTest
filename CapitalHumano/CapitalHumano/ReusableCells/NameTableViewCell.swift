@@ -30,12 +30,14 @@ class NameTableViewCell: UITableViewCell {
     func setupFor(name:String){
         self.txtLbl.text = name
         self.txtLbl.keyboardType = .default
+        self.txtLbl.autocorrectionType = .no
         self.txtLbl.tag = labelTypeTag.name.rawValue
     }
     
     func setupFor(phone:String){
         self.txtLbl.text = phone
         self.txtLbl.keyboardType = .decimalPad
+        self.txtLbl.autocorrectionType = .no
         self.txtLbl.tag = labelTypeTag.phone.rawValue
     }
 }

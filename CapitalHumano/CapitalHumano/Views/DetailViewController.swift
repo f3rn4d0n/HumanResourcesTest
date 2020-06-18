@@ -45,6 +45,9 @@ class DetailViewController: UIViewController {
         optionsTV.register(optionColor, forCellReuseIdentifier: kColorCellIdentifier)
         let optionGender = UINib(nibName: kGenderCellIdentifier, bundle: nil)
         optionsTV.register(optionGender, forCellReuseIdentifier: kGenderCellIdentifier)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     func setupData(){
@@ -61,6 +64,16 @@ class DetailViewController: UIViewController {
     
     @objc func datePickerChanged(picker: UIDatePicker) {
         presenter?.setBirthday(picker.date)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            optionsTV.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+        }
+    }
+    
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        optionsTV.contentInset = .zero
     }
     
 }
@@ -202,14 +215,6 @@ extension DetailViewController: DetailViewProtocol{
 }
 
 extension DetailViewController: UITextFieldDelegate{
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.view.frame = CGRect(x: 0, y: self.view.frame.minY-100, width: self.view.frame.width, height: self.view.frame.height)
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        self.view.frame = CGRect(x: 0, y: self.view.frame.minY+100, width: self.view.frame.width, height: self.view.frame.height)
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
