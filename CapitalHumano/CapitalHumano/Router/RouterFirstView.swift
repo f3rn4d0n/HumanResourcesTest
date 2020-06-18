@@ -26,7 +26,6 @@ class RouterFirstView: RouterFirstViewProtocol {
             presenter.view = view
             presenter.interactor = interactor
             presenter.routing = self
-//            interactor.presenter = presenter
             navigationController = UINavigationController(rootViewController: view)
         }
         

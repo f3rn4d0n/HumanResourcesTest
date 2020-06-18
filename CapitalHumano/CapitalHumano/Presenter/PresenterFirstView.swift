@@ -10,6 +10,7 @@ import UIKit
 
 
 protocol PresenterFirstViewProtocol{
+    func requestOptions()
     func getNumberOfOptions() -> Int
     func getOptionBy(index:Int) -> OptionModel?
     func selectOption(_ index:Int)
@@ -19,13 +20,13 @@ protocol PresenterFirstViewProtocol{
 class PresenterFirstView: PresenterFirstViewProtocol {
     
     var view:ViewControllerProtocol?
-    var interactor:InteractorFirstView?
-    var routing:RouterFirstView?
+    var interactor:InteractorFirstViewProtocolInput?
+    var routing:RouterFirstViewProtocol?
     
     var options:[OptionModel] = []
     
-    init(){
-        options = InteractorFirstView().getListOfOptions()
+    func requestOptions(){
+        options = interactor?.getListOfOptions() ?? []
     }
     
     func getNumberOfOptions() -> Int{

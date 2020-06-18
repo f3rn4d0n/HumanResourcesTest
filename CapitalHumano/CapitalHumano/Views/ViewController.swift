@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupData()
     }
     
     func setupUI(){
@@ -41,6 +42,10 @@ class ViewController: UIViewController {
         continueBtn.tintColor = .white
         
         self.navigationItem.title = "Seleccione una opción"
+    }
+    
+    func setupData(){
+        presenter?.requestOptions()
     }
 
 
