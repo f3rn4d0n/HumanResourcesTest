@@ -20,6 +20,9 @@ protocol PresenterDetailViewProtocol{
     func getUserPhone() -> String
     func getUserAge() -> Date
     func setImage(_ image:UIImage)
+    func setBirthday(_ date:Date)
+    func setName(_ name:String)
+    func setPhone(_ phone:String)
     func getNumberOfColors() -> Int
     func getColorBy(index:Int) -> ColorModel
     func selectColorBy(index:Int)
@@ -83,6 +86,18 @@ class PresenterDetailView: PresenterDetailViewProtocol, InteractorDetailViewProt
     //Update info
     func setImage(_ image:UIImage){
         user.photo = image
+    }
+    
+    func setBirthday(_ date:Date){
+        user.birthday = date
+    }
+    
+    func setName(_ name: String) {
+        user.name = name
+    }
+
+    func setPhone(_ phone: String) {
+        user.phoneNumber = phone
     }
     
     //Colors

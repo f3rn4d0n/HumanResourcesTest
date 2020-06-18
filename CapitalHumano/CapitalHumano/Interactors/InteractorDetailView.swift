@@ -23,10 +23,10 @@ class InteractorDetailView: InteractorDetailViewProtocolInput {
     
     func getColors() -> [ColorModel]{
         return [
-            ColorModel(color: .black),
             ColorModel(color: .green),
             ColorModel(color: .red),
             ColorModel(color: .orange),
+            ColorModel(color: .black),
             ColorModel(color: .gray),
             ColorModel(color: .blue),
             ColorModel(color: .yellow),

@@ -59,6 +59,10 @@ class DetailViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @objc func datePickerChanged(picker: UIDatePicker) {
+        presenter?.setBirthday(picker.date)
+    }
+    
 }
 
 extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
@@ -86,7 +90,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let option = presenter?.getOptionBy(index: section)
         if option == .gender{
-            return 2
+            return presenter?.getNumberOfGenders() ?? 0
         }
         if option == .color{
             return presenter?.getNumberOfColors() ?? 0
@@ -129,14 +133,17 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
         case .name:
             let cell = tableView.dequeueReusableCell(withIdentifier: kNameCellIdentifier, for: indexPath) as! NameTableViewCell
             cell.setupFor(name: presenter!.getUserName())
+            cell.txtLbl.delegate = self
             return cell
         case .phone:
             let cell = tableView.dequeueReusableCell(withIdentifier: kNameCellIdentifier, for: indexPath) as! NameTableViewCell
             cell.setupFor(phone: presenter!.getUserPhone())
+            cell.txtLbl.delegate = self
             return cell
         case .birthday:
             let cell = tableView.dequeueReusableCell(withIdentifier: kDateCellIdentifier, for: indexPath) as! DateTableViewCell
             cell.setupWith(birthday: presenter!.getUserAge())
+            cell.datePicker.addTarget(self, action: #selector(datePickerChanged(picker:)), for: .valueChanged)
             return cell
         case .gender:
             let cell = tableView.dequeueReusableCell(withIdentifier: kGenderCellIdentifier, for: indexPath) as! GenderTableViewCell
@@ -151,29 +158,17 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
             }
             return cell
         default:
-            break
+            let cell = tableView.dequeueReusableCell(withIdentifier: kCameraCellIdentifier, for: indexPath) as! CameraTableViewCell
+            cell.setupFor(camera: nil)
+            return cell
         }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: kCameraCellIdentifier, for: indexPath) as! CameraTableViewCell
-        cell.setupFor(camera: nil)
-        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.view.endEditing(true)
         switch presenter?.getOptionBy(index: indexPath.section) {
-        case .photo:
-            print("No hacer nada")
-            tableView.deselectRow(at: indexPath, animated: true)
-            break
         case .camera:
             self.takeAPicture()
-            break
-        case .name:
-            break
-        case .phone:
-            break
-        case .birthday:
             break
         case .gender:
             presenter?.selectGenderBy(index: indexPath.row)
@@ -184,6 +179,8 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
             tableView.reloadData()
             break
         default:
+            print("No hacer nada")
+            tableView.deselectRow(at: indexPath, animated: true)
             break
         }
     }
@@ -204,3 +201,29 @@ extension DetailViewController:UIImagePickerControllerDelegate, UINavigationCont
 extension DetailViewController: DetailViewProtocol{
 }
 
+extension DetailViewController: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.view.frame = CGRect(x: 0, y: self.view.frame.minY-100, width: self.view.frame.width, height: self.view.frame.height)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.view.frame = CGRect(x: 0, y: self.view.frame.minY+100, width: self.view.frame.width, height: self.view.frame.height)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentString: NSString = textField.text! as NSString
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        if textField.tag == labelTypeTag.name.rawValue{
+            presenter?.setName(newString as String)
+            return newString.length <= 35
+        }else{
+            presenter?.setPhone(newString as String)
+            return newString.length <= 10
+        }
+    }
+}

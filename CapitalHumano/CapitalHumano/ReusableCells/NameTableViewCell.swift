@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum labelTypeTag : Int{
+    case phone = 1002
+    case name = 1001
+}
+
 class NameTableViewCell: UITableViewCell {
     
     @IBOutlet weak var txtLbl: UITextField!
@@ -25,37 +30,12 @@ class NameTableViewCell: UITableViewCell {
     func setupFor(name:String){
         self.txtLbl.text = name
         self.txtLbl.keyboardType = .default
-        self.txtLbl.delegate = self
+        self.txtLbl.tag = labelTypeTag.name.rawValue
     }
     
     func setupFor(phone:String){
         self.txtLbl.text = phone
         self.txtLbl.keyboardType = .decimalPad
-        self.txtLbl.delegate = self
-    }
-}
-
-extension NameTableViewCell: UITextFieldDelegate{
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        //self.view.frame = CGRect(x: 0, y: self.view.frame.minY-100, width: self.view.frame.width, height: self.view.frame.height)
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-//        self.view.frame = CGRect(x: 0, y: self.view.frame.minY+100, width: self.view.frame.width, height: self.view.frame.height)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentString: NSString = textField.text! as NSString
-        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-        if textField.keyboardType == .default{
-            return newString.length <= 35
-        }else{
-            return newString.length <= 10
-        }
+        self.txtLbl.tag = labelTypeTag.phone.rawValue
     }
 }

@@ -24,6 +24,8 @@ class DateTableViewCell: UITableViewCell {
     }
     
     func setupWith(birthday:Date){
+        datePicker.datePickerMode = .date
+        datePicker.maximumDate = Date()
         datePicker.date = birthday
     }
     
