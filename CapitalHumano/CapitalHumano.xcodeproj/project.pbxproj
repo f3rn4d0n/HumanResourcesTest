@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8F1780249BC790004B5878 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F177F249BC790004B5878 /* DetailViewController.swift */; };
+		CE8F1782249BC7EE004B5878 /* PresenterDetailVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F1781249BC7EE004B5878 /* PresenterDetailVIew.swift */; };
+		CE8F1784249BC831004B5878 /* RouterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F1783249BC831004B5878 /* RouterDetailView.swift */; };
+		CE8F1786249BC887004B5878 /* InteractorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F1785249BC887004B5878 /* InteractorDetailView.swift */; };
 		CE9F4A32249B5DDA00AEA8A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F4A31249B5DDA00AEA8A5 /* AppDelegate.swift */; };
 		CE9F4A34249B5DDA00AEA8A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F4A33249B5DDA00AEA8A5 /* SceneDelegate.swift */; };
 		CE9F4A36249B5DDA00AEA8A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F4A35249B5DDA00AEA8A5 /* ViewController.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE8F177F249BC790004B5878 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE8F1781249BC7EE004B5878 /* PresenterDetailVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDetailVIew.swift; sourceTree = "<group>"; };
+		CE8F1783249BC831004B5878 /* RouterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDetailView.swift; sourceTree = "<group>"; };
+		CE8F1785249BC887004B5878 /* InteractorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorDetailView.swift; sourceTree = "<group>"; };
 		CE9F4A2E249B5DDA00AEA8A5 /* CapitalHumano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapitalHumano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F4A31249B5DDA00AEA8A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F4A33249B5DDA00AEA8A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9F4A6C249B6BE800AEA8A5 /* InteractorFirstView.swift */,
+				CE8F1785249BC887004B5878 /* InteractorDetailView.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9F4A70249B6C0800AEA8A5 /* RouterFirstView.swift */,
+				CE8F1783249BC831004B5878 /* RouterDetailView.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9F4A6E249B6BFA00AEA8A5 /* PresenterFirstView.swift */,
+				CE8F1781249BC7EE004B5878 /* PresenterDetailVIew.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -188,6 +199,7 @@
 		CE9F4A72249BC42000AEA8A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F177F249BC790004B5878 /* DetailViewController.swift */,
 				CE9F4A35249B5DDA00AEA8A5 /* ViewController.swift */,
 				CE9F4A37249B5DDA00AEA8A5 /* Main.storyboard */,
 			);
@@ -326,13 +338,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8F1780249BC790004B5878 /* DetailViewController.swift in Sources */,
 				CE9F4A64249B5FF300AEA8A5 /* OptionTableViewCell.swift in Sources */,
+				CE8F1782249BC7EE004B5878 /* PresenterDetailVIew.swift in Sources */,
 				CE9F4A6F249B6BFA00AEA8A5 /* PresenterFirstView.swift in Sources */,
 				CE9F4A36249B5DDA00AEA8A5 /* ViewController.swift in Sources */,
 				CE9F4A6D249B6BE800AEA8A5 /* InteractorFirstView.swift in Sources */,
+				CE8F1786249BC887004B5878 /* InteractorDetailView.swift in Sources */,
 				CE9F4A71249B6C0800AEA8A5 /* RouterFirstView.swift in Sources */,
 				CE9F4A32249B5DDA00AEA8A5 /* AppDelegate.swift in Sources */,
 				CE9F4A34249B5DDA00AEA8A5 /* SceneDelegate.swift in Sources */,
+				CE8F1784249BC831004B5878 /* RouterDetailView.swift in Sources */,
 				CE9F4A68249B612D00AEA8A5 /* OptionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
