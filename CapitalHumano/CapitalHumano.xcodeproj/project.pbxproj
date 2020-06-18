@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D283D229C877D73B9B3AE1F /* Pods_CapitalHumano_CapitalHumanoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F8787718C226C7E232E23C /* Pods_CapitalHumano_CapitalHumanoUITests.framework */; };
+		7194547B42107ADA1B081F85 /* Pods_CapitalHumanoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3532670E4F97E7BEAE5976A9 /* Pods_CapitalHumanoTests.framework */; };
+		B91B20BD5FD201504295ED5F /* Pods_CapitalHumano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D49E433F9640B5E4352829 /* Pods_CapitalHumano.framework */; };
 		CE8F1780249BC790004B5878 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F177F249BC790004B5878 /* DetailViewController.swift */; };
 		CE8F1782249BC7EE004B5878 /* PresenterDetailVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F1781249BC7EE004B5878 /* PresenterDetailVIew.swift */; };
 		CE8F1784249BC831004B5878 /* RouterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F1783249BC831004B5878 /* RouterDetailView.swift */; };
@@ -58,6 +61,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00EF2D8D0C7E16130E738DB2 /* Pods-CapitalHumanoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumanoTests.debug.xcconfig"; path = "Target Support Files/Pods-CapitalHumanoTests/Pods-CapitalHumanoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		08D49E433F9640B5E4352829 /* Pods_CapitalHumano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapitalHumano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBE5328CF9B4BFF73F72804 /* Pods-CapitalHumano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumano.debug.xcconfig"; path = "Target Support Files/Pods-CapitalHumano/Pods-CapitalHumano.debug.xcconfig"; sourceTree = "<group>"; };
+		2665C753D1F8AC47248E3F28 /* Pods-CapitalHumano-CapitalHumanoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumano-CapitalHumanoUITests.debug.xcconfig"; path = "Target Support Files/Pods-CapitalHumano-CapitalHumanoUITests/Pods-CapitalHumano-CapitalHumanoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3532670E4F97E7BEAE5976A9 /* Pods_CapitalHumanoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapitalHumanoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8984B8A57CC6526F79991F00 /* Pods-CapitalHumanoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumanoTests.release.xcconfig"; path = "Target Support Files/Pods-CapitalHumanoTests/Pods-CapitalHumanoTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE8F177F249BC790004B5878 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE8F1781249BC7EE004B5878 /* PresenterDetailVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterDetailVIew.swift; sourceTree = "<group>"; };
 		CE8F1783249BC831004B5878 /* RouterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDetailView.swift; sourceTree = "<group>"; };
@@ -95,6 +104,9 @@
 		CE9F4A6E249B6BFA00AEA8A5 /* PresenterFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterFirstView.swift; sourceTree = "<group>"; };
 		CE9F4A70249B6C0800AEA8A5 /* RouterFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFirstView.swift; sourceTree = "<group>"; };
 		CEA4120F249BDF9F0073E475 /* GenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderModel.swift; sourceTree = "<group>"; };
+		D9F8787718C226C7E232E23C /* Pods_CapitalHumano_CapitalHumanoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CapitalHumano_CapitalHumanoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF4086A86A288F1CA136C8 /* Pods-CapitalHumano-CapitalHumanoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumano-CapitalHumanoUITests.release.xcconfig"; path = "Target Support Files/Pods-CapitalHumano-CapitalHumanoUITests/Pods-CapitalHumano-CapitalHumanoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF7FE7D6F91254DE57F2139C /* Pods-CapitalHumano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CapitalHumano.release.xcconfig"; path = "Target Support Files/Pods-CapitalHumano/Pods-CapitalHumano.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91B20BD5FD201504295ED5F /* Pods_CapitalHumano.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194547B42107ADA1B081F85 /* Pods_CapitalHumanoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,12 +130,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D283D229C877D73B9B3AE1F /* Pods_CapitalHumano_CapitalHumanoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54EA74267D44D5EF04F8C8E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BBE5328CF9B4BFF73F72804 /* Pods-CapitalHumano.debug.xcconfig */,
+				FF7FE7D6F91254DE57F2139C /* Pods-CapitalHumano.release.xcconfig */,
+				2665C753D1F8AC47248E3F28 /* Pods-CapitalHumano-CapitalHumanoUITests.debug.xcconfig */,
+				E5AF4086A86A288F1CA136C8 /* Pods-CapitalHumano-CapitalHumanoUITests.release.xcconfig */,
+				00EF2D8D0C7E16130E738DB2 /* Pods-CapitalHumanoTests.debug.xcconfig */,
+				8984B8A57CC6526F79991F00 /* Pods-CapitalHumanoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE9F4A25249B5DDA00AEA8A5 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +158,8 @@
 				CE9F4A47249B5DDC00AEA8A5 /* CapitalHumanoTests */,
 				CE9F4A52249B5DDC00AEA8A5 /* CapitalHumanoUITests */,
 				CE9F4A2F249B5DDA00AEA8A5 /* Products */,
+				54EA74267D44D5EF04F8C8E2 /* Pods */,
+				F3C1895B07E312BDAC8E87E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +276,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F3C1895B07E312BDAC8E87E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08D49E433F9640B5E4352829 /* Pods_CapitalHumano.framework */,
+				D9F8787718C226C7E232E23C /* Pods_CapitalHumano_CapitalHumanoUITests.framework */,
+				3532670E4F97E7BEAE5976A9 /* Pods_CapitalHumanoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9F4A58249B5DDC00AEA8A5 /* Build configuration list for PBXNativeTarget "CapitalHumano" */;
 			buildPhases = (
+				DD600FCE53CBE0C6ECBF7F58 /* [CP] Check Pods Manifest.lock */,
 				CE9F4A2A249B5DDA00AEA8A5 /* Sources */,
 				CE9F4A2B249B5DDA00AEA8A5 /* Frameworks */,
 				CE9F4A2C249B5DDA00AEA8A5 /* Resources */,
+				0F43A3594D9B327411A492BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9F4A5B249B5DDC00AEA8A5 /* Build configuration list for PBXNativeTarget "CapitalHumanoTests" */;
 			buildPhases = (
+				4C6D1BEE5A4F03DDDE32E142 /* [CP] Check Pods Manifest.lock */,
 				CE9F4A40249B5DDC00AEA8A5 /* Sources */,
 				CE9F4A41249B5DDC00AEA8A5 /* Frameworks */,
 				CE9F4A42249B5DDC00AEA8A5 /* Resources */,
@@ -287,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9F4A5E249B5DDC00AEA8A5 /* Build configuration list for PBXNativeTarget "CapitalHumanoUITests" */;
 			buildPhases = (
+				F9A34884ADC8028D0589ED6A /* [CP] Check Pods Manifest.lock */,
 				CE9F4A4B249B5DDC00AEA8A5 /* Sources */,
 				CE9F4A4C249B5DDC00AEA8A5 /* Frameworks */,
 				CE9F4A4D249B5DDC00AEA8A5 /* Resources */,
+				79D2BC4C1B5C8822C8E700E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,6 +422,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F43A3594D9B327411A492BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano/Pods-CapitalHumano-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano/Pods-CapitalHumano-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano/Pods-CapitalHumano-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C6D1BEE5A4F03DDDE32E142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapitalHumanoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D2BC4C1B5C8822C8E700E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano-CapitalHumanoUITests/Pods-CapitalHumano-CapitalHumanoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano-CapitalHumanoUITests/Pods-CapitalHumano-CapitalHumanoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapitalHumano-CapitalHumanoUITests/Pods-CapitalHumano-CapitalHumanoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD600FCE53CBE0C6ECBF7F58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapitalHumano-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A34884ADC8028D0589ED6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CapitalHumano-CapitalHumanoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE9F4A2A249B5DDA00AEA8A5 /* Sources */ = {
@@ -572,6 +721,7 @@
 		};
 		CE9F4A59249B5DDC00AEA8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBE5328CF9B4BFF73F72804 /* Pods-CapitalHumano.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +740,7 @@
 		};
 		CE9F4A5A249B5DDC00AEA8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7FE7D6F91254DE57F2139C /* Pods-CapitalHumano.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,6 +759,7 @@
 		};
 		CE9F4A5C249B5DDC00AEA8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00EF2D8D0C7E16130E738DB2 /* Pods-CapitalHumanoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +782,7 @@
 		};
 		CE9F4A5D249B5DDC00AEA8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8984B8A57CC6526F79991F00 /* Pods-CapitalHumanoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -652,6 +805,7 @@
 		};
 		CE9F4A5F249B5DDC00AEA8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2665C753D1F8AC47248E3F28 /* Pods-CapitalHumano-CapitalHumanoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +826,7 @@
 		};
 		CE9F4A60249B5DDC00AEA8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AF4086A86A288F1CA136C8 /* Pods-CapitalHumano-CapitalHumanoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

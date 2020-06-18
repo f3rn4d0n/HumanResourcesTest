@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CameraTableViewCell: UITableViewCell {
     
@@ -34,6 +35,11 @@ class CameraTableViewCell: UITableViewCell {
     }
     
     func setupFor(photo:String){
+        imageV.kf.setImage(
+            with: URL(string: photo),
+            placeholder: #imageLiteral(resourceName: "camera"),
+            options: [.transition(.fade(1))]
+        )
         imageV.isUserInteractionEnabled = false
     }
 }
