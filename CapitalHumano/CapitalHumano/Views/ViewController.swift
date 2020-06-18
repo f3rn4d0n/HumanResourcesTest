@@ -31,12 +31,14 @@ class ViewController: UIViewController {
     func setupUI(){
         optionsTV.delegate = self
         optionsTV.dataSource = self
+        optionsTV.separatorStyle = .none
         
         let optionNib = UINib(nibName: kCellIdentifier, bundle: nil)
         optionsTV.register(optionNib, forCellReuseIdentifier: kCellIdentifier)
         
         continueBtn.layer.cornerRadius = continueBtn.frame.height / 2
         continueBtn.backgroundColor = .systemGreen
+        continueBtn.tintColor = .white
         
         self.navigationItem.title = "Seleccione una opción"
     }
